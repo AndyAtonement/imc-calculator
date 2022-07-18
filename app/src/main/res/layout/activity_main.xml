@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_blackgreen"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvImc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/imc_calculator"
+        android:textColor="@color/teal_200"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/insira_seu_peso_em_kg"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="60dp"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textColorHint="@color/light_grey"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/insira_sua_altura"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="60dp"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textColorHint="@color/light_grey"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="110dp"
+        android:backgroundTint="@color/button_color"
+        android:fontFamily="monospace"
+        android:minHeight="60dp"
+        android:text="@string/calculate"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imToLinkedin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/transparent"
+        android:contentDescription="@string/linkedin"
+        android:minHeight="35dp"
+        android:onClick="goToLinkedIn"
+        app:srcCompat="@drawable/linkedin"
+        tools:ignore="UsingOnClickInXml,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+</LinearLayout>
