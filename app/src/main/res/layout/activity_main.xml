@@ -24,6 +24,7 @@
         android:id="@+id/etWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="10dp"
@@ -79,18 +80,6 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
-
-    <ImageButton
-        android:id="@+id/imToLinkedin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/transparent"
-        android:contentDescription="@string/linkedin"
-        android:minHeight="35dp"
-        android:onClick="goToLinkedIn"
-        app:srcCompat="@drawable/linkedin"
-        tools:ignore="UsingOnClickInXml,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
 </LinearLayout>

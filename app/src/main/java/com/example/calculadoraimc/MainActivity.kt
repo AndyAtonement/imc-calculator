@@ -73,13 +73,5 @@ class MainActivity : AppCompatActivity() {
         return answer
     }
 
-    fun goToLinkedIn(view: View) {
-        toUrl("https://linkedin.com/in/andre-saantos")
-    }
 
-    fun toUrl(url: String) {
-        uriUrl = Uri.parse(url)
-        lauchBrowser = Intent(Intent.ACTION_VIEW, uriUrl)
-        startActivity(lauchBrowser)
-    }
 }
